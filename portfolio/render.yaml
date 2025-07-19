@@ -12,3 +12,4 @@ services:
         value: portfolio.settings
       - key: PYTHON_VERSION
         value: 3.12
+

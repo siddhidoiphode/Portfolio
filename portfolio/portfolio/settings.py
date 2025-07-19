@@ -35,7 +35,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'siddhi-portfolio.onrender.com',
+    'siddhi-portfolio.onrender.com','*',
 ]
 
 
@@ -185,6 +185,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
 
 # Only needed in production with collectstatic
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
