@@ -33,7 +33,101 @@ Version: 1.0
 */
 
 /*============Glogbal Style================ */
+
+
 html,
+
+
+/* Override Bootstrap if it's applying .bg-transparent */
+
+
+
+
+.header {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+ 
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery img.zoomed {
+    transform: scale(2);  /* Adjust this to how much you want to zoom */
+    z-index: 9999;
+}
+
+.upload-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.upload-section input {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+.video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+video {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* #about {
+    padding-top: 20px !important;
+    margin-top: 0 !important;
+}
+
+.section-padding {
+    padding-top: 20px !important;
+}
+
+.section-title {
+    margin-top: 0 !important;
+} */
+
+
+
+
 body {
     height: 100%;
 }
@@ -689,6 +783,13 @@ button:focus {
 /*::::::::::::::::::::::::::::::::::::
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
+
+.portfolio-area img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
 
 .work-list {
     margin-bottom: 60px;

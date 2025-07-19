@@ -23,20 +23,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%#c9o83q(r)h)+)&@b_w485q%i!-6a%9+3ii#z0bhgqn%t3kce'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['.vercel.app']
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost','siddhi-portfolio.onrender.com']
 # ALLOWED_HOSTS = ['siddhi-portfolio.onrender.com']
 
 
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'siddhi-portfolio.onrender.com','*',
-]
+# ALLOWED_HOSTS = [
+#     '127.0.0.1',
+#     'localhost',
+#     'siddhi-portfolio.onrender.com','*',
+# ]
 
 
 # Application definition
