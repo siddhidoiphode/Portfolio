@@ -28,7 +28,15 @@ DEBUG = True
 # ALLOWED_HOSTS = ['.vercel.app']
 # ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['127.0.0.1', 'localhost','siddhi-portfolio.onrender.com']
-ALLOWED_HOSTS = ['siddhi-portfolio.onrender.com']
+# ALLOWED_HOSTS = ['siddhi-portfolio.onrender.com']
+
+
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'siddhi-portfolio.onrender.com',
+]
 
 
 # Application definition
