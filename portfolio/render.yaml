@@ -1,15 +1,29 @@
+# services:
+#   - type: web
+#     name: portfolio-django
+#     env: python
+#     plan: free
+#     branch: main
+#     rootDir: portfolio
+#     buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+#     startCommand: "gunicorn portfolio.wsgi:application"
+#     envVars:
+#       - key: DJANGO_SETTINGS_MODULE
+#         value: portfolio.settings
+#       - key: PYTHON_VERSION
+#         value: 3.12
+
+
 services:
   - type: web
-    name: portfolio-django
+    name: portfolio-web
     env: python
-    plan: free
-    branch: main
-    rootDir: portfolio
-    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
-    startCommand: "gunicorn portfolio.wsgi:application"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn portfolio.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: portfolio.settings
-      - key: PYTHON_VERSION
-        value: 3.12
-
+      - key: SECRET_KEY
+        value: your-secret-key
+      - key: DEBUG
+        value: "False"
